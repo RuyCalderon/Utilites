@@ -308,8 +308,8 @@ Initialize3DArrayAsym(int ** ColumnsByRowAndPlane, int * RowsInPlane, int Planes
 	return NewArray;
 }
 
-//It was (partially) all for this. There is probably a healthy middle ground between the allocation and freeing
-//that would be useful to explore.
+//It was (partially) all for this. There is probably a healthy middle ground in terms of complexity
+//between the allocation and freeing that would be useful to explore.
 template<typename CType_t>
 static void
 FreeCTArray(RT_StaticArray2D<CType_t> * Array)
